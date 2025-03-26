@@ -14,11 +14,15 @@ const inter = Inter({ subsets: ["latin"] });
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.png" sizes="any" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
+      </head>
       <body>
         <DataProvider>
-        <ToastContainer/>
-           <SessionProvider>{children}</SessionProvider>
-        </DataProvider> 
+          <ToastContainer />
+          <SessionProvider>{children}</SessionProvider>
+        </DataProvider>
       </body>
     </html>
   );
